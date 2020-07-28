@@ -29,7 +29,7 @@ namespace SuperMemoAssistant.Plugins.MouseoverFOLDOC
     [Heading("By Jamesb | Experimental Learning")]
 
     [Heading("Features:")]
-    [Text(@"- Load dictionary definitions from the free online dictionary of computing")]
+    [Text(@"- Load dictionary definitions from the Free Online Dictionary of Computing")]
 
     [Heading("Keyword Scanning Settings")]
 
@@ -58,7 +58,7 @@ namespace SuperMemoAssistant.Plugins.MouseoverFOLDOC
 
     public override string ToString()
     {
-      return "Mouseover FOLDOC Settings";
+      return "Mouseover Free Online Dictionary of Computing Settings";
     }
 
     public event PropertyChangedEventHandler PropertyChanged;
