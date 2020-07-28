@@ -21,7 +21,7 @@ namespace SuperMemoAssistant.Plugins.MouseoverFOLDOC
   [Serializable]
   public class ContentService : PerpetualMarshalByRefObject, IMouseoverContentProvider
   {
-    private MouseoverFOLDOCCfg Config => Svc<MouseoverFOLDOCPlugin>.Plugin.Config;
+
     private string DictRegex = Svc<MouseoverFOLDOCPlugin>.Plugin.DictRegex;
 
     private readonly HttpClient _httpClient;
@@ -71,7 +71,7 @@ namespace SuperMemoAssistant.Plugins.MouseoverFOLDOC
     public PopupContent CreatePopupContent(string content, string url) 
     {
 
-      if (content.IsNullOrEmpty())
+      if (content.IsNullOrEmpty() || url.IsNullOrEmpty())
         return null;
 
       var doc = new HtmlDocument();
@@ -84,7 +84,6 @@ namespace SuperMemoAssistant.Plugins.MouseoverFOLDOC
         return null;
 
       var titleNode = contentNode.SelectSingleNode("//h2");
-
       if (titleNode.IsNull())
         return null;
 

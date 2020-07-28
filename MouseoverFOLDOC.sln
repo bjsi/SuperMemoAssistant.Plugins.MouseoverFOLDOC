@@ -7,11 +7,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_Solution files", "_Solutio
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Plugins", "Plugins", "{60B03698-E2A1-41B8-90B9-A78326179FA0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperMemoAssistant.Plugins.MouseoverFOLDOC", "src\SuperMemoAssistant.Plugins.MouseoverFOLDOC\SuperMemoAssistant.Plugins.MouseoverFOLDOC.csproj", "{DB043882-08BE-4484-91A2-34B0A505FDC2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SuperMemoAssistant.Plugins.MouseoverFOLDOC", "src\SuperMemoAssistant.Plugins.MouseoverFOLDOC\SuperMemoAssistant.Plugins.MouseoverFOLDOC.csproj", "{DB043882-08BE-4484-91A2-34B0A505FDC2}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{300FC866-CFD7-4C04-B944-E3E69B0C0316}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperMemoAssistant.Plugins.MouseoverFOLDOC.Tests", "src\SuperMemoAssistant.Plugins.MouseoverFOLDOC.Tests\SuperMemoAssistant.Plugins.MouseoverFOLDOC.Tests.csproj", "{B06C71E8-ED2C-49B3-8336-7DF9129D0D3E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SuperMemoAssistant.Plugins.MouseoverFOLDOC.Tests", "src\SuperMemoAssistant.Plugins.MouseoverFOLDOC.Tests\SuperMemoAssistant.Plugins.MouseoverFOLDOC.Tests.csproj", "{B06C71E8-ED2C-49B3-8336-7DF9129D0D3E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MouseoverPopup.Interop", "..\MouseoverPopup.Interop\MouseoverPopup.Interop.csproj", "{C2A1A16B-45C5-41E3-8948-B554CE311BFD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -42,6 +44,16 @@ Global
 		{B06C71E8-ED2C-49B3-8336-7DF9129D0D3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B06C71E8-ED2C-49B3-8336-7DF9129D0D3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B06C71E8-ED2C-49B3-8336-7DF9129D0D3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2A1A16B-45C5-41E3-8948-B554CE311BFD}.1. Alpha (Debug)|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2A1A16B-45C5-41E3-8948-B554CE311BFD}.1. Alpha (Debug)|Any CPU.Build.0 = Debug|Any CPU
+		{C2A1A16B-45C5-41E3-8948-B554CE311BFD}.2. Beta (Release)|Any CPU.ActiveCfg = Release|Any CPU
+		{C2A1A16B-45C5-41E3-8948-B554CE311BFD}.2. Beta (Release)|Any CPU.Build.0 = Release|Any CPU
+		{C2A1A16B-45C5-41E3-8948-B554CE311BFD}.3. Stable (Release)|Any CPU.ActiveCfg = Release|Any CPU
+		{C2A1A16B-45C5-41E3-8948-B554CE311BFD}.3. Stable (Release)|Any CPU.Build.0 = Release|Any CPU
+		{C2A1A16B-45C5-41E3-8948-B554CE311BFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2A1A16B-45C5-41E3-8948-B554CE311BFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2A1A16B-45C5-41E3-8948-B554CE311BFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2A1A16B-45C5-41E3-8948-B554CE311BFD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -49,6 +61,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{DB043882-08BE-4484-91A2-34B0A505FDC2} = {60B03698-E2A1-41B8-90B9-A78326179FA0}
 		{B06C71E8-ED2C-49B3-8336-7DF9129D0D3E} = {300FC866-CFD7-4C04-B944-E3E69B0C0316}
+		{C2A1A16B-45C5-41E3-8948-B554CE311BFD} = {60B03698-E2A1-41B8-90B9-A78326179FA0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C47C532D-5534-46A3-A9A3-5301F2CA1FB2}

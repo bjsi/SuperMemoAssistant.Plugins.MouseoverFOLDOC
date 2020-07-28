@@ -23,7 +23,7 @@ namespace SuperMemoAssistant.Plugins.MouseoverFOLDOC
       // var outPutDirectory = Path.GetDirectoryName(Assembly.GetExecutingAssembly().CodeBase);
       // TODO: Wouldn't work unless hard coded ?????????????
 
-      var jsonPath = Path.Combine(@"C:\Users\james\SuperMemoAssistant\Plugins\Development\SuperMemoAssistant.Plugins.MouseoverCSDict\dictionary\dictionary_entries");
+      var jsonPath = Path.Combine(@"C:\Users\james\SuperMemoAssistant\Plugins\Development\SuperMemoAssistant.Plugins.MouseoverFOLDOC\dictionary\dictionary_entries.json");
 
       try
       {
