@@ -98,7 +98,7 @@ namespace SuperMemoAssistant.Plugins.MouseoverFOLDOC
       LoadConfig();
 
       var refs = new ReferenceRegexes(TitleRegexes, AuthorRegexes, LinkRegexes, SourceRegexes);
-      var opts = new KeywordScanningOptions(refs, Keywords.KeywordMap, CategoryPathRegexes);
+      var opts = new KeywordScanningOptions(refs, Keywords.KeywordMap, MapType.URL, CategoryPathRegexes);
 
       if (!this.RegisterProvider(Name, new string[] { DictRegex }, opts, _contentService))
       {

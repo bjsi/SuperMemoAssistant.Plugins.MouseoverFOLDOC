@@ -24,12 +24,12 @@ namespace SuperMemoAssistant.Plugins.MouseoverFOLDOC
     Validates = true)]
   public class MouseoverFOLDOCCfg : CfgBase<MouseoverFOLDOCCfg>, INotifyPropertyChangedEx
   {
-    [Title("Plugin Name")]
+    [Title("Mouseover Free Online Dictionary of Computing")]
 
     [Heading("By Jamesb | Experimental Learning")]
 
     [Heading("Features:")]
-    [Text(@"- Load dictionary definitions from Oxford Dictionary of Computer Science")]
+    [Text(@"- Load dictionary definitions from the free online dictionary of computing")]
 
     [Heading("Keyword Scanning Settings")]
 

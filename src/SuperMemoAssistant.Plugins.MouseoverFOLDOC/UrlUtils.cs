@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace SuperMemoAssistant.Plugins.MouseoverFOLDOC
 {
+
   public static class UrlUtils
   {
     public static string ConvRelToAbsLink(string baseUrl, string relUrl)
@@ -20,33 +21,18 @@ namespace SuperMemoAssistant.Plugins.MouseoverFOLDOC
             baseUrl = baseUrl.TrimEnd('/');
           }
 
-          if (relUrl.StartsWith("/") && !relUrl.StartsWith("//"))
-          {
-            if (relUrl.StartsWith("/wiki") || relUrl.StartsWith("/w/"))
-            {
-              return $"{baseUrl}{relUrl}";
-            }
-            return $"{baseUrl}/wiki{relUrl}";
-          }
-          else if (relUrl.StartsWith("./"))
-          {
-            if (relUrl.StartsWith("./wiki") || relUrl.StartsWith("./w/"))
-            {
-              return $"{baseUrl}{relUrl.Substring(1)}";
-            }
-            return $"{baseUrl}/wiki{relUrl.Substring(1)}";
-          }
-          else if (relUrl.StartsWith("#"))
-          {
-            return $"{baseUrl}/wiki/{relUrl}";
-          }
-          else if (relUrl.StartsWith("//"))
+          if (relUrl.StartsWith("//"))
           {
             return $"https:{relUrl}";
+          }
+          else
+          {
+            return $"{baseUrl}{relUrl}";
           }
         }
       }
       return relUrl;
     }
+
   }
 }

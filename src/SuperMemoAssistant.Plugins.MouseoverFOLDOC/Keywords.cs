@@ -32,8 +32,7 @@ namespace SuperMemoAssistant.Plugins.MouseoverFOLDOC
         {
 
           string json = r.ReadToEnd();
-          var jObj = json.Deserialize<Dictionary<string, string>>();
-          return jObj;
+          return json.Deserialize<Dictionary<string, string>>();
 
         }
       }
