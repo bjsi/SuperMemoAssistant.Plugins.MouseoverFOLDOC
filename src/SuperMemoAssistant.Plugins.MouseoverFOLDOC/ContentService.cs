@@ -91,10 +91,11 @@ namespace SuperMemoAssistant.Plugins.MouseoverFOLDOC
           <html>
             <body>
               <p>{0}</p>
+              <small>{1}</small>
             </body>
           </html>";
 
-      html = String.Format(html, contentNode.InnerHtml);
+      html = String.Format(html, contentNode.InnerHtml, Svc<MouseoverFOLDOCPlugin>.Plugin.Name);
 
       var refs = new References();
       refs.Title = titleNode.InnerText;
